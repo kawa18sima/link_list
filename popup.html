@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="load">
+        <p>Loading...</p>
+      </div>
+      <div v-else>
+        <h2>このページのリンクリスト</h2>
+        <ul>
+          <li v-for="link in links">
+            <a v-bind:href="link" v-on:click="moveSite(link)">
+              {{link}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
