@@ -1,0 +1,21 @@
+body{
+  width:400px;
+  background-color:#69b7ff;
+  margin:0;
+  font-family: monospace;
+  text-align: center;
+}
+
+ul{
+  width:300px;
+}
+
+li{
+  list-style: none;
+  margin-top: 10px;
+}
+
+.createTab{
+  width:90%;
+  margin:5px 0;
+}
